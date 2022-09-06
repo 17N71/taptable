@@ -1,0 +1,124 @@
+$imgheight: 686.83px;
+$imgwidth: 821px;
+@import url("./style.css");
+.doubleTablets {
+  display: flex;
+  padding: 0 140px;
+  overflow: hidden;
+}
+.doubleTablets-text {
+  display: flex;
+  margin-top: 160px;
+  flex-direction: column;
+  align-items: start;
+}
+.doubleTablets-title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  color: #3db12f;
+}
+.doubleTablets-description {
+  font-weight: 400;
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+.doubleTablets-description + .doubleTablets-description {
+  margin-top: 70px;
+}
+.doubleTablets-download {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  gap: 28px;
+  a {
+    width: 170px;
+    cursor: pointer;
+    display: inline-block;
+    display: inline-block;
+    img {
+      display: inline-block;
+      cursor: pointer;
+      width: 100%;
+    }
+  }
+}
+.doubleTablets-image {
+  height: $imgheight;
+  width: $imgwidth;
+  img {
+    height: $imgheight;
+    width: $imgwidth;
+  }
+}
+@media screen and (max-width: 991px) {
+  .doubleTablets-text {
+    margin-top: 60px;
+  }
+  .doubleTablets-image {
+    height: $imgheight / 1.5;
+    width: $imgwidth / 1.5;
+    position: relative;
+    img {
+      height: 100%;
+      object-fit: contain;
+      position: absolute;
+
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 1319px) {
+  .doubleTablets {
+    flex-direction: column;
+  }
+  .doubleTablets-text {
+    align-items: center;
+    text-align: center;
+  }
+  .doubleTablets-image {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 671px) {
+  .doubleTablets {
+    padding: 0 70px;
+  }
+  .doubleTablets-text {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 531px) {
+  .doubleTablets {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 451px) {
+  .doubleTablets-title {
+    font-size: 35px;
+  }
+  .doubleTablets-description {
+    font-size: 16px;
+    & + & {
+      margin-top: 10px;
+    }
+  }
+  .doubleTablets-download {
+    flex-direction: column;
+    gap: 0;
+  }
+  .doubleTablets-image {
+    display: none;
+  }
+  .doubleTablets-text {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .doubleTablets {
+    padding: 0 15px;
+  }
+}

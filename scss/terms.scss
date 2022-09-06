@@ -1,0 +1,61 @@
+@import url("./style.css");
+.terms_of_cooperation {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.terms_of_cooperation-title {
+  font-weight: 700;
+  text-align: center;
+  font-size: 32px;
+  line-height: 43px;
+  color: var(--green);
+}
+.terms_of_cooperation-container {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 850px;
+  gap: 30px;
+  padding: 0 20px;
+}
+.my-atropos {
+  flex: 1 1 calc(33.333% - 30px);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: var(--primaryshadow);
+}
+.terms_of_cooperation-item {
+  background: var(--green);
+  padding: 27px 13px 17px;
+  border-radius: var(--fpx);
+}
+
+@media screen and (max-width: 815px) {
+  .my-atropos {
+    flex: 1 1 calc(50% - 30px);
+  }
+}
+@media screen and (max-width: 470px) {
+  .my-atropos {
+    flex: 1 1 100%;
+  }
+  .terms_of_cooperation-title {
+    font-size: 28px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 350px) {
+  .terms_of_cooperation-title {
+    padding: 0 8px;
+  }
+}

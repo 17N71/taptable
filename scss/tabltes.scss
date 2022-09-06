@@ -1,0 +1,28 @@
+@import url("./style.css");
+.tabltes {
+  width: 100%;
+  height: 110vh;
+  background-image: url(../images/tablets.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: var(--blg);
+}
+@media screen and (max-width: 922px) {
+  .tabltes {
+    min-height: 70vh;
+    height: auto;
+  }
+}
+@media screen and (max-width: 550px) {
+  .tabltes {
+    min-height: 50vh;
+    height: auto;
+  }
+}
+@media screen and (max-width: 390px) {
+  .tabltes {
+    min-height: 40vh;
+    height: auto;
+  }
+}

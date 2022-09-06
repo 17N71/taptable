@@ -1,0 +1,54 @@
+@import url("style.css");
+.about_company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 70px;
+  padding: 55px 300px 120px;
+  text-align: center;
+  min-height: 480px;
+}
+
+.about_company-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  color: var(--green);
+}
+
+.about_company-desctiption p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: var(--blg);
+}
+.about_company-desctiption p + p {
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 1353px) {
+  .about_company {
+    padding: 55px 180px 120px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .about_company {
+    padding: 55px 70px 120px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .about_company {
+    padding: 55px 30px 120px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about_company {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}

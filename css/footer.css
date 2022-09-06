@@ -1,0 +1,127 @@
+@import url("./style.css");
+footer.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 70px 150px 80px;
+}
+
+.footer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 14px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.whf,
+.whf a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.footer-item:nth-of-type(2) {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+address {
+  font-style: normal;
+}
+
+.reverses {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #3db12f;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.reverses:active, .reverses:focus {
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 1236px) {
+  footer.footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: var(--tpx);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(50% - var(--tpx));
+            flex: 0 1 calc(50% - var(--tpx));
+    place-items: center;
+  }
+
+  .footer-item:nth-of-type(2) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+@media screen and (max-width: 991px) {
+  footer.footer {
+    gap: var(--tpx);
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  footer.footer .footer-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 calc(100% - var(--tpx));
+            flex: 1 1 calc(100% - var(--tpx));
+    text-align: center;
+  }
+}
+.to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border: none;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  border-radius: 100%;
+  font-weight: 900;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.to-top.scrolled {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

@@ -1,0 +1,70 @@
+@import url("../fonts/stylesheet.css");
+@import url("./header.css");
+@import url("./doublephone.css");
+@import url("./aboutcompany.css");
+@import url("./modal.css");
+@import url("./tabltes.css");
+@import url("./terms.css");
+@import url("./footer.css");
+:root {
+  --fseg: "Segoe UI";
+  --frob: "Roboto";
+  --green: #3db12f;
+  --blg: #192c33;
+  --lgrey: #c4c4c4;
+  --white: #ffffff;
+  --btngrad: linear-gradient(90deg, #648e00 0%, #005100 100%);
+  --tpx: 30px;
+  --fpx: 5px;
+  --primaryshadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.3);
+}
+// fonts
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-family: var(--fseg);
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  width: 100%;
+}
+.wrapper-header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  border: none;
+  outline: none;
+  background-image: linear-gradient(45deg, #05553a 0%, #054b1c 100%);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--blg);
+  border-radius: 7px;
+}
+::selection {
+  background-color: var(--green);
+  color: var(--blg);
+}
+@media screen and (max-width: 451px) {
+  .wrapper-header {
+    min-height: 70vh;
+  }
+}
+
+body.lock {
+  background-color: var(--blg);
+  overflow: hidden;
+}
